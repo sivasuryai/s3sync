@@ -1,0 +1,29 @@
+# first argument is folder to backup
+# second argument is S3 bucket name without s3://
+
+#Uncomment following line to run syncToS3 every 5 minutes
+# TO uncomment, remove # at the begining of the line
+#*/5 * * * *  /root/s3sync/centos/syncToS3.sh <> <>
+
+
+#uncomment following to run syncToS3 every 10 minutes
+
+#*/10 * * * *  /root/s3sync/centos/syncToS3.sh <> <>
+
+
+# uncomment following to run syncToS3 once every hour
+#* */1 * * *  /root/s3sync/centos/syncToS3.sh <> <>
+
+#uncomment to run once every day
+#* * */1 * *  /root/s3sync/centos/syncToS3.sh <> <>
+
+#uncomment to run once in two days
+#* * */2 * *  /root/s3sync/centos/syncToS3.sh <> <>
+
+# uncomment to run once every week
+#* * * */1 *  /root/s3sync/centos/syncToS3.sh <> <>
+
+
+# EXAMPLE to backup /home/centos/siva directory once every 15 minutes to s3 bucket name ramaramani
+*/15 * * * *  /root/s3sync/centos/syncToS3.sh /home/centos/siva/ ramaramani
+

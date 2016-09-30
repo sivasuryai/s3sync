@@ -1,0 +1,3 @@
+# Copy cron_to_sync_s3 file in this directory  to /var/spool/cron/ in centos computers to periodically backup directories to s3 bucket
+#
+#
